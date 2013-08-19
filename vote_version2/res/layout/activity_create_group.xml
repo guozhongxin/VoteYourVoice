@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreateGroupActivity" >
+
+    <LinearLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_gravity="center"  
+    	android:gravity="center"
+    	android:orientation="vertical" >
+	   <ProgressBar
+	       android:id="@+id/wait"
+	       android:gravity="center_vertical|center_horizontal"
+	       android:layout_gravity="center_vertical|center_horizontal"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content" />
+	  <TextView
+        android:id="@+id/noresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saving..."
+	 />
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小组名称"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="23sp" 
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="小组简介"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etginfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp" 
+            android:ems="10" />
+    </LinearLayout>
+
+</RelativeLayout>

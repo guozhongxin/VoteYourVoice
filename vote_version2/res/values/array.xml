@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menus">
+        <item>开放投票</item>
+        <item>附近投票</item>
+        <item>注销</item>
+        <item>搜索</item>
+    </string-array>
+</resources>

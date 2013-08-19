@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_creategroup"
+        android:orderInCategory="100"
+        android:icon="@drawable/creategroup"
+        android:showAsAction="ifRoom|withText"
+        />
+	<item
+        android:id="@+id/action_addgroup"
+        android:orderInCategory="100"
+        android:icon="@drawable/add_meitu_1"
+        android:showAsAction="ifRoom|withText"/>
+</menu>

@@ -1,0 +1,79 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+    <!-- Login form -->
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:background="@drawable/back_ground"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" >
+
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/username_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:background="@drawable/email_background"
+                android:layout_marginTop="12dp"
+                android:paddingLeft = "57dp"
+                />
+            
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:background="@drawable/email_background2"
+                android:layout_marginTop="12dp"
+                android:paddingLeft = "57dp"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:background="@drawable/password_background"
+                android:layout_marginTop="12dp"
+                android:paddingLeft = "57dp"
+                />           
+            
+            <EditText
+                android:id="@+id/password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/password_confirm_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:background="@drawable/password_background"
+                android:layout_marginTop="12dp"
+                android:paddingLeft = "57dp"
+                />
+            <Button
+                android:id="@+id/register_button2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:text = "注册"
+                android:background="@drawable/register_button" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

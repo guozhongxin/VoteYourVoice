@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vote4"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+	<!-- baidu api -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.vote.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" 
+            android:theme="@android:style/Theme.NoTitleBar">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vote.activity.Location"
+            android:label="@string/title_activity_main" 
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name="com.vote.activity.NearbyVoteActivity" 
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.HistoryVoteActivity" 
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.MyGroupsActivity" 
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.MyVoteActivity2" 
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.VoteActivity"
+            	  android:label="@string/title_activity_vote" 
+            	  android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.VoteListActivity" 
+            	  android:label="@string/title_activity_vote_list"
+            	  android:theme="@style/AppTheme" />
+        
+        <!-- yutian -->
+        <activity android:name="com.vote.activity.RegisterActivity" 
+            android:theme="@style/AppTheme"/>
+        <activity 
+            android:name="com.vote.activity.SearchGroupActivity"
+            android:label="@string/title_activity_search_group" 
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.GroupInfoActivity" 
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.vote.activity.MainActivity" 
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.vote.activity.CreateGroupActivity"
+            android:label="@string/title_activity_add_group" 
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.vote.activity.CreateVoteActivity"
+            android:label="@string/title_activity_add_vote" 
+            android:theme="@style/AppTheme"/>
+        <service android:name="com.baidu.location.f" android:enabled="true"
+			android:process=":remote" />
+    </application>
+
+</manifest>

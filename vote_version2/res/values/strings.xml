@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vote</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_vote">投票</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_refresh">刷新</string>
+    <string name="action_register">注册</string>
+    <string name="title_activity_add_group">创建小组</string>
+    <string name="title_activity_add_vote">创建投票</string>
+    <string name="title_activity_vote_list">小组投票</string>
+    <string name="title_activity_vote">投票信息</string>
+	<string name="title_activity_search_group">搜索小组</string>
+	
+	<!-- by yutian -->
+	<string name="login">登录</string>
+	<string name="register">注册</string>
+	<string name="username_hint">Username</string>
+	<string name="password_hint">Password</string>
+	<string name="password_confirm_hint">Confirm Password</string>
+	<string name="email_hint">Email Address</string>
+	<string name="add_groupname_require">起个名字吧！</string>
+	<string name="add_groupinfo_require">说点什么吧！</string>
+	<string name="add_votename_require">起个名字吧！</string>
+	<string name="add_voteinfo_require">说点什么吧！</string>
+	<string name="add_voteoption_require">建几个选项吧！</string>
+	<string name="search_group_hint">小组名或id</string>
+	<string name="search_group_require">请输入小组的名字或id！</string>
+</resources>

@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >   
+ 
+	<LinearLayout
+	    android:id="@+id/loading"
+	    android:background="@drawable/back_ground"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	    <ImageView 
+	         android:layout_width="wrap_content"
+	  		 android:layout_height="wrap_content"
+	  		 android:id="@+id/imgeView"
+	        />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Loading"
+			android:layout_marginTop="10dip"
+			android:layout_gravity="center_horizontal"
+			android:textSize="21sp"
+		/>
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:background="@drawable/back_ground"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical"
+            android:focusable="true"  
+   			android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="12dp"
+                 android:paddingLeft = "57dp"
+                android:background="@drawable/email_background"
+                 />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:layout_marginTop="12dp"
+                android:paddingLeft = "57dp"
+                android:background="@drawable/password_background"
+    			/>
+
+             
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="22dp"
+                android:text = "登陆"
+                android:background="@drawable/login_button" />
+            
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:text = "注册"
+                android:background="@drawable/register_button" />
+        </LinearLayout>
+    </LinearLayout>
+ </LinearLayout>
